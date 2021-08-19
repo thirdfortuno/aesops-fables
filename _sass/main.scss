@@ -1,0 +1,278 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body {
+	background-color: #fff;
+	font-family: 'goudyBookletter', Georgia, Times New Roman, Times, serif;
+}
+h1 {
+	font-size: 36px;
+	font-weight: normal;
+	color: #666;
+	padding: 0;
+	line-height: 36pt;
+	text-align: center;
+	margin-bottom: 1em;
+}
+h2 {
+	font-size: 28px;
+	color: #ccc;
+	font-weight: normal;
+	text-transform: none;
+	line-height: 28pt;
+	text-align: center;
+}
+p {
+	font-size: 24px;
+	color: #666;
+	line-height: 24pt;
+	text-align: left;
+	text-indent: 50px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+blockquote {
+	font-size: 24px;
+	font-style: italic;
+	padding: 55px 0 0;
+	color: #666;
+	line-height: 24pt;
+	text-align: center;
+}
+#header {
+	align: center;
+	width: 100%;
+	height: 120px;
+	margin: 0;
+	padding: 0;
+}
+/* Navigation Buttons */
+.nav {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style: none;
+	font-size: 23px;
+	letter-spacing: 1px;
+}
+#backButton {
+	position: relative;
+	float: left;
+	margin: 15px 0 0;
+}
+#nextButton {
+	position: relative;
+	float: right;
+	margin: 15px 0 0;
+}
+#backButtonFooter {
+	position: relative;
+	float: left;
+	margin: 30px 0 0;
+}
+#nextButtonFooter {
+	position: relative;
+	float: right;
+	margin: 30px 0 0;
+}
+#backButton a:link, #backButton a:visited, #backButtonFooter a:link, #backButtonFooter a:visited {
+	text-decoration: none;
+	color: #ccc;
+	text-align: left;
+}
+#nextButton a:link, #nextButton a:visited, #nextButtonFooter a:link, #nextButtonFooter a:visited {
+	text-decoration: none;
+	color: #ccc;
+	text-align: right;
+}
+#backButton a:hover, #nextButton a:hover, #backButtonFooter a:hover, #nextButtonFooter a:hover {
+	color: #fa0000;
+}
+/* Header Text */
+.bookTitleHeader {
+	font-size: 33px;
+	color: #ccc;
+	line-height: 33pt;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.bookTitleHeader a:link {
+	text-decoration: none;
+	color: #ccc;
+	padding: 0;
+}
+.bookTitleHeader a:visited {
+	color: #ccc;
+}
+.bookTitleHeader a:hover {
+	color: #fa0000;
+}
+/* toc entries */
+ul.toc {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #666;
+	line-height: 36px;
+	text-align: center;
+	overflow: auto;
+}
+ul.toc li {
+	margin: 0 0 10px;
+}
+ul.toc li a:link, ul.toc li a:visited {
+	padding: 0;
+	text-decoration: none;
+	font-size: 24px;
+	text-align: center;
+	color: #666;
+}
+ul.toc li a:hover {
+	color: #ff0000;
+}
+/* navigation link to about page */
+ul.about {
+	font-family: 'goudyBookletter', Georgia, Times New Roman, Times, serif;
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+	font-size: 24px;
+	color: #666;
+	line-height: 36px;
+	text-align: center;
+	overflow: auto;
+}
+ul.about li a:link, .about li a:visited {
+	padding: 0;
+	text-decoration: none;
+	font-size: 24px;
+	text-align: center;
+	color: #666;
+}
+ul.about li a:hover {
+	color: #ff0000;
+}
+/* main box with shadow */
+.container {
+	font-family: 'goudyBookletter', Georgia, Times New Roman, Times, serif;
+	border: solid #ccc 1px;
+	position: relative;
+	width: 85%;
+	height: auto;
+	min-height: 600px;
+	background-color: #fff;
+	margin: 24px auto 0;
+	padding: 60px 48px 48px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+}
+/* the shadow elements are the same except where they are anchored, their rotation origin and their skew/rotation direction. */
+.container:after, .container:before {
+	z-index: -1;
+	position: absolute;
+	background: transparent;
+	width: 600px;
+	height: 600px;
+	content: '';
+	bottom: 25px;
+}
+/* bottom right shadow */
+.container:after {
+	right: 80px;
+	transform-origin: right bottom;
+	-webkit-transform: skew(15deg) rotate(5deg);
+	-webkit-box-shadow: 8px 12px 10px rgba(0, 0, 0, 0.3);
+	-moz-transform: skew(15deg) rotate(5deg);
+	-moz-box-shadow: 8px 12px 10px rgba(0, 0, 0, 0.3);
+}
+/* bottom left shadow */
+.container:before {
+	left: 80px;
+	transform-origin: left bottom;
+	-webkit-transform: skew(-15deg) rotate(-5deg);
+	-webkit-box-shadow: -8px 12px 10px rgba(0, 0, 0, 0.3);
+	-moz-transform: skew(-15deg) rotate(-5deg);
+	-moz-box-shadow: -8px 12px 10px rgba(0, 0, 0, 0.3);
+}
+/* basic page */
+#page {
+	width: auto;
+	height: auto;
+	margin: 0 100px;
+	padding: 0;
+	background-color: transparent;
+	overflow: auto;
+}
+/* footer */
+#footer {
+	text-align:center;
+	align: center;
+	width: 100%;
+	height: 120px;
+	margin: 40px 0 0 0;
+	padding: 0 0 20px 0;
+}
+/* basic graphic right */
+#graphic {
+	position: relative;
+	float: right;
+	margin: 0 0 12px 24px;
+	overflow: hidden;
+}
+/* basic graphic override for large images */
+#largeImage {
+	position: relative;
+	margin: 0 auto 12px;
+	overflow: hidden;
+}
+/* basic graphic centered */
+#centeredImage {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+	padding: 0;
+	overflow: hidden;
+	width: auto;
+}
+/* logo */
+#logo {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+	padding: 0;
+	overflow: hidden;
+	width: auto;
+	height: 100px;
+}
+/* cover */
+#cover {
+	position: relative;
+	margin: 50px 0 30px 0;
+	width: 100%;
+	height: 400px;
+	background: url(images/cover.jpg) no-repeat center;
+}
+/* toc */	
+#toc {
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	overflow: hidden;
+}
+/* about page */
+#aboutDiv {
+	align: center;
+	width: auto;
+	height: auto;
+	margin: 0 0 25px;
+	padding: 0;
+	background-color: transparent;
+	overflow: hidden;
+}
