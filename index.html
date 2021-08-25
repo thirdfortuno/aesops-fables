@@ -5,22 +5,11 @@ title: Home
 <h1>A List of the Fables</h1>
 
 <ul class="toc">
+  {% for fable in site.fables %}
   <li>
-    <a href="./fables/1.html">Two Travelers & a Bear</a>
+    <a href="{{ fable.url }}">{{ fable.title }}</a>
   </li>
-  <li>
-    <a href="./fables/2.html">The Lion, the Bear, & the Fox</a>
-  </li>
-  <li>
-    <a href="./fables/3.html">The Wild Boar & the Fox</a>
-  </li>
-  <li>
-    <a href="./fables/4.html">The Bat & the Weasels</a>
-  </li>
-  <li>
-    <a href="./fables/5.html">The Wolf & the Crane</a>
-  </li>
-  <li>
+  {% endfor %}
     <h3>More coming soon!</h3>
   </li>
 </ul>
